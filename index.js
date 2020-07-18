@@ -10,12 +10,11 @@ import {
     ScrollView,
     TouchableOpacity,
     TouchableWithoutFeedback,
-    ViewPropTypes as RNViewPropTypes,
 } from 'react-native';
 
 import styles from './style';
 
-const ViewPropTypes = RNViewPropTypes || View.propTypes;
+const ViewPropTypes = {};
 
 let componentIndex = 0;
 
