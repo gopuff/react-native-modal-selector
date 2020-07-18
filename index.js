@@ -14,7 +14,8 @@ import {
 
 import styles from './style';
 
-const ViewPropTypes = {};
+const ViewPropTypes = { style: {}};
+const emptyStyle = {};
 
 let componentIndex = 0;
 
@@ -30,22 +31,22 @@ const propTypes = {
     initValue:                      PropTypes.string,
     animationType:                  PropTypes.oneOf(['none', 'slide', 'fade']),
     style:                          ViewPropTypes.style,
-    selectStyle:                    ViewPropTypes.style,
-    selectTextStyle:                Text.propTypes.style,
+    selectStyle:                    ViewPropTypes.style,    
+    selectTextStyle:                emptyStyle,
     optionStyle:                    ViewPropTypes.style,
-    optionTextStyle:                Text.propTypes.style,
+    optionTextStyle:                emptyStyle,
     optionContainerStyle:           ViewPropTypes.style,
     sectionStyle:                   ViewPropTypes.style,
     childrenContainerStyle:         ViewPropTypes.style,
     touchableStyle:                 ViewPropTypes.style,
     touchableActiveOpacity:         PropTypes.number,
-    sectionTextStyle:               Text.propTypes.style,
-    selectedItemTextStyle:          Text.propTypes.style,
+    sectionTextStyle:               emptyStyle,
+    selectedItemTextStyle:          emptyStyle,
     cancelContainerStyle:           ViewPropTypes.style,
     cancelStyle:                    ViewPropTypes.style,
-    cancelTextStyle:                Text.propTypes.style,
+    cancelTextStyle:                emptyStyle,
     overlayStyle:                   ViewPropTypes.style,
-    initValueTextStyle:             Text.propTypes.style,
+    initValueTextStyle:             emptyStyle,
     cancelText:                     PropTypes.string,
     disabled:                       PropTypes.bool,
     supportedOrientations:          PropTypes.arrayOf(
