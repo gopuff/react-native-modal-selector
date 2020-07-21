@@ -14,8 +14,6 @@ import {
 
 import styles from './style';
 
-const ViewPropTypes = { style: {}};
-const emptyStyle = {};
 
 let componentIndex = 0;
 
@@ -30,23 +28,7 @@ const propTypes = {
     closeOnChange:                  PropTypes.bool,
     initValue:                      PropTypes.string,
     animationType:                  PropTypes.oneOf(['none', 'slide', 'fade']),
-    style:                          ViewPropTypes.style,
-    selectStyle:                    ViewPropTypes.style,    
-    selectTextStyle:                emptyStyle,
-    optionStyle:                    ViewPropTypes.style,
-    optionTextStyle:                emptyStyle,
-    optionContainerStyle:           ViewPropTypes.style,
-    sectionStyle:                   ViewPropTypes.style,
-    childrenContainerStyle:         ViewPropTypes.style,
-    touchableStyle:                 ViewPropTypes.style,
     touchableActiveOpacity:         PropTypes.number,
-    sectionTextStyle:               emptyStyle,
-    selectedItemTextStyle:          emptyStyle,
-    cancelContainerStyle:           ViewPropTypes.style,
-    cancelStyle:                    ViewPropTypes.style,
-    cancelTextStyle:                emptyStyle,
-    overlayStyle:                   ViewPropTypes.style,
-    initValueTextStyle:             emptyStyle,
     cancelText:                     PropTypes.string,
     disabled:                       PropTypes.bool,
     supportedOrientations:          PropTypes.arrayOf(
